@@ -22,6 +22,10 @@ var material = new THREE.MeshBasicMaterial({map: texture, side: THREE.DoubleSide
 var mesh = new THREE.Mesh(geometry, material); 
 scene.add(mesh); 
 
+document.body.addEventListener('touchstart', function(evt) {
+    vid.play();
+});
+
 function update(){
   requestAnimationFrame(update);
   renderer.render(scene, camera);
