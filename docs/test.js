@@ -1,9 +1,10 @@
 var vid = document.createElement('video');
-vid.src = 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4';
 vid.muted = true;
+vid.autoplay = true;
 vid.playsinline = true;
 vid.crossOrigin = 'anonymous';
-vid.play();
+vid.src = 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4';
+//vid.play();
 
  
 var renderer = new THREE.WebGLRenderer();
