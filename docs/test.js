@@ -23,7 +23,7 @@ var mesh = new THREE.Mesh(geometry, material);
 scene.add(mesh); 
 
 document.body.addEventListener('touchstart', function(evt) {
-    vid.play();
+    vid2.play();
 });
 
 function update(){
