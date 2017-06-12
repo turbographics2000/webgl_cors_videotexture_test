@@ -1,16 +1,16 @@
-var vid = document.createElement('video');
-vid.muted = true;
-vid.autoplay = true;
-vid.playsinline = true;
-vid.crossOrigin = 'anonymous';
-vid.src = 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4';
+// var vid = document.createElement('video');
+// vid.muted = true;
+// vid.autoplay = true;
+// vid.playsinline = true;
+// vid.crossOrigin = 'anonymous';
+// vid.src = 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4';
 //vid.play();
 
  
 var renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight); 
 document.body.appendChild(renderer.domElement);
-var texture = new THREE.VideoTexture(vid);
+var texture = new THREE.VideoTexture(vid2);
 texture.minFilter = THREE.LinearFilter;
 texture.magFilter = THREE.LinearFilter;
 texture.format = THREE.RGBFormat;
